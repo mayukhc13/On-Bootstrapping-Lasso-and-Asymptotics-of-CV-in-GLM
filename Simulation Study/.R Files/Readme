@@ -1,1 +1,28 @@
+This folder contains reproducible codes for Logistic, Gamma and Linear regressions. 
+Change the parameters according to the requirements. 
+For synopsis of the codes, refer to the "Readme" file under Simulation Study.
+
+
+
+# Name and Description of the files:
+
+## Regression Type: Logistic
+
+(i) logistic revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_50_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(ii) logistic revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_100_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(iii) logistic revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_150_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(iv)  logistic revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_300_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(v)  logistic revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_500_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+
+
 
