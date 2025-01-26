@@ -64,5 +64,85 @@ These procedures are performed in Logistic Regression.
 
 
 
-#### Name and Descriptions of Each .R Files:
-1. 
+#### Name and Description of the .R files:
+
+## Regression Type: Logistic
+
+(A) For Comparative Analysis (Insight 2)
+
+(i) logistic revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_50_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(ii) logistic revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_100_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(iii) logistic revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_150_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(iv)  logistic revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_300_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+(v)  logistic revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
+     To utilise same design matrix for different a_n, just recall "logit_design_500_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
+
+
+(B) For Comparative Analysis (Insight 3)
+
+(i) logistic revised_50_5_2.R : For n=50, p=5, p_0=2 and a_n=n^(-1/3)
+    logistic revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-1/3)
+    logistic revised_50_8_3.R : For n=50, p=8, p_0=3 and a_n=n^(-1/3)
+
+(ii) logistic revised_100_5_2.R : For n=100, p=5, p_0=2 and a_n=n^(-1/3)
+     logistic revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-1/3)
+     logistic revised_100_8_3.R : For n=100, p=8, p_0=3 and a_n=n^(-1/3)
+
+(iii) logistic revised_150_5_2.R : For n=150, p=5, p_0=2 and a_n=n^(-1/3)
+      logistic revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-1/3)
+      logistic revised_150_8_3.R : For n=150, p=8, p_0=3 and a_n=n^(-1/3)
+
+(iv) logistic revised_300_5_2.R : For n=300, p=5, p_0=2 and a_n=n^(-1/3)
+     logistic revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-1/3)
+     logistic revised_300_8_3.R : For n=300, p=8, p_0=3 and a_n=n^(-1/3)
+
+(v) logistic revised_500_5_2.R : For n=500, p=5, p_0=2 and a_n=n^(-1/3)
+    logistic revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-1/3)
+    logistic revised_500_8_3.R : For n=500, p=8, p_0=3 and a_n=n^(-1/3)
+
+
+(C) For Comparative Analysis (Insight 1)
+
+Follow Case (A) with a_n=n^(-1/3).
+
+
+
+
+## Regression Type: Gamma (Only Comparative Analysis Insight 1 is produced)
+
+(i)  gamma revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-1/3)
+   
+(ii) gamma revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iii) gamma revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iv) gamma revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(v)  gamma revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-1/3)
+    
+
+
+
+
+## Regression Type: Linear (Only Comparative Analysis Insight 1 is produced)
+
+(i)  linear revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-1/3)
+   
+(ii) linear revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iii) linear revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iv) linear revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(v)  linear revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-1/3)
+    
+
+
