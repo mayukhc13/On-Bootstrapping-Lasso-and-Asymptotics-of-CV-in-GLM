@@ -26,6 +26,69 @@ For synopsis of the codes, refer to the "Readme" file under Simulation Study.
      To utilise same design matrix for different a_n, just recall "logit_design_500_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
 
 
-(B) For Comparative Analysis (Insight 1)
+(B) For Comparative Analysis (Insight 3)
+
+(i) logistic revised_50_5_2.R : For n=50, p=5, p_0=2 and a_n=n^(-1/3)
+    logistic revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-1/3)
+    logistic revised_50_8_3.R : For n=50, p=8, p_0=3 and a_n=n^(-1/3)
+
+(ii) logistic revised_100_5_2.R : For n=100, p=5, p_0=2 and a_n=n^(-1/3)
+     logistic revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-1/3)
+     logistic revised_100_8_3.R : For n=100, p=8, p_0=3 and a_n=n^(-1/3)
+
+(iii) logistic revised_150_5_2.R : For n=150, p=5, p_0=2 and a_n=n^(-1/3)
+      logistic revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-1/3)
+      logistic revised_150_8_3.R : For n=150, p=8, p_0=3 and a_n=n^(-1/3)
+
+(iv) logistic revised_300_5_2.R : For n=300, p=5, p_0=2 and a_n=n^(-1/3)
+     logistic revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-1/3)
+     logistic revised_300_8_3.R : For n=300, p=8, p_0=3 and a_n=n^(-1/3)
+
+(v) logistic revised_500_5_2.R : For n=500, p=5, p_0=2 and a_n=n^(-1/3)
+    logistic revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-1/3)
+    logistic revised_500_8_3.R : For n=500, p=8, p_0=3 and a_n=n^(-1/3)
+
+
+(C) For Comparative Analysis (Insight 1)
+
+Follow Case (A) with a_n=n^(-1/3).
+
+
+
+
+## Regression Type: Gamma (Only Comparative Analysis Insight 1 is produced)
+
+(i)  gamma revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-1/3)
+   
+(ii) gamma revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iii) gamma revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iv) gamma revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(v)  gamma revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-1/3)
+    
+
+
+
+
+## Regression Type: Linear (Only Comparative Analysis Insight 1 is produced)
+
+(i)  linear revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-1/3)
+   
+(ii) linear revised_100_7_4.R : For n=100, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iii) linear revised_150_7_4.R : For n=150, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(iv) linear revised_300_7_4.R : For n=300, p=7, p_0=4 and a_n=n^(-1/3)
+     
+(v)  linear revised_500_7_4.R : For n=500, p=7, p_0=4 and a_n=n^(-1/3)
+    
+
+
+
+
+
+
 
 
