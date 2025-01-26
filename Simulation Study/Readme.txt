@@ -54,8 +54,15 @@ These procedures are performed in Logistic Regression.
 
 
 
+#### Name and Descriptions of Each .xlsx (or .csv) Files:
+1. logit_design_50_7_4.xlsx : Utilise this as fixed design matrix for (n,p,p_0)=(50,7,4) when we vary a_n=n^(-c), with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485).
+2. logit_design_100_7_4.xlsx : Utilise this as fixed design matrix for (n,p,p_0)=(100,7,4) when we vary a_n=n^(-c), with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485).
+3. logit_design_150_7_4.xlsx : Utilise this as fixed design matrix for (n,p,p_0)=(150,7,4) when we vary a_n=n^(-c), with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485).
+4. logit_design_300_7_4.xlsx : Utilise this as fixed design matrix for (n,p,p_0)=(300,7,4) when we vary a_n=n^(-c), with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485).
+5. logit_design_500_7_4.xlsx : Utilise this as fixed design matrix for (n,p,p_0)=(500,7,4) when we vary a_n=n^(-c), with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485).
 
 
 
 
-#### Name and Descriptions of Each Files:
+#### Name and Descriptions of Each .R Files:
+1. 
