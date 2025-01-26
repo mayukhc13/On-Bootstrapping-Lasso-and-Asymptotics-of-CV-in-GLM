@@ -8,6 +8,8 @@ For synopsis of the codes, refer to the "Readme" file under Simulation Study.
 
 ## Regression Type: Logistic
 
+(A) For Comparative Analysis (Insight 2)
+
 (i) logistic revised_50_7_4.R : For n=50, p=7, p_0=4 and a_n=n^(-c) with c=(0.0015, 1/6, 1/5, 1/4, 1/3, 0.485)
      To utilise same design matrix for different a_n, just recall "logit_design_50_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
 
@@ -24,5 +26,6 @@ For synopsis of the codes, refer to the "Readme" file under Simulation Study.
      To utilise same design matrix for different a_n, just recall "logit_design_500_7_4.xlsx" in the code instead of generating it through mvrnorm syntax.
 
 
+(B) For Comparative Analysis (Insight 1)
 
 
