@@ -76,9 +76,7 @@ dataf_matrix
 response_y = dataf_matrix[,colnames(dataf_matrix)=="y"]
 response_y
 design_matrix1 = dataf_matrix[,colnames(dataf_matrix)!="y"]
-design_matrix1
-
-design_matrix=scale(design_matrix1,TRUE,TRUE)
+design_matrix=design_matrix1
 design_matrix
 
 
@@ -185,52 +183,51 @@ tau_boot ## B copies of centered bootstrap-beta tilde distribution scale with sq
 sorted_tau_boot = apply(tau_boot,2,sort)
 sorted_tau_boot ## independent col wise sorting of tau boot for getting critical value
 
-alpha = 0.10 #level of significance
-simul_lower_index= 1+as.integer(B*(alpha/(2*p))) ##simultaneous lower index
-simul_upper_index= 1+ as.integer(B*(1-(alpha/(2*p))))
-simul_index_left= 1+as.integer(B*(1-(alpha/p)))
-simul_index_right= as.integer(B*(alpha/p)) 
+alpha=0.10
+lower_index = as.integer(B*(alpha/2)) #both sided
+index_right = as.integer(B*alpha) #right sided
+index_left = 1+ as.integer(B*(1-alpha)) #left sided
+upper_index = 1+ as.integer(B*(1-(alpha/2))) #both sided
+lower_index
+upper_index
+index_left
+index_right
 
-simul_lower_index
-simul_upper_index
-simul_index_left
-simul_index_right
-
-
-simul_critical_value_matrix = matrix(NA,2,9)
+critical_value_matrix = matrix(NA,2,9)
 for(j in 1:9)
 {
-  simul_critical_value_matrix[1,j]= -(sorted_tau_boot[simul_upper_index,j])/sqrt(n)
-  simul_critical_value_matrix[2,j]= -(sorted_tau_boot[simul_lower_index,j])/sqrt(n)
+  critical_value_matrix[1,j]= -(sorted_tau_boot[upper_index,j])/sqrt(n)
+  critical_value_matrix[2,j]= -(sorted_tau_boot[lower_index,j])/sqrt(n)
 }
-simul_critical_value_matrix
+critical_value_matrix
 
-simul_lower_confidence_limit_matrix = matrix(NA,1,9)
-simul_upper_confidence_limit_matrix = matrix(NA,1,9)
+lower_confidence_limit_matrix = matrix(NA,1,9)
+upper_confidence_limit_matrix = matrix(NA,1,9)
 for(j in 1:9)
 {
-  simul_lower_confidence_limit_matrix[1,j]= beta_hat_final3[j]+simul_critical_value_matrix[1,j]
-  simul_upper_confidence_limit_matrix[1,j]= beta_hat_final3[j]+simul_critical_value_matrix[2,j]
+lower_confidence_limit_matrix[1,j]= beta_hat_final3[j]+critical_value_matrix[1,j]
+upper_confidence_limit_matrix[1,j]= beta_hat_final3[j]+critical_value_matrix[2,j]
 }
-simul_lower_confidence_limit_matrix
-simul_upper_confidence_limit_matrix
+lower_confidence_limit_matrix
+upper_confidence_limit_matrix
 
-simul_critical_value_matrix_right = matrix(NA,1,9)
-simul_right_confidence_limit_matrix = matrix(NA,1,9)
+critical_value_matrix_right = matrix(NA,1,9)
+right_confidence_limit_matrix = matrix(NA,1,9)
 for(j in 1:9){
-  simul_critical_value_matrix_right[1,j] = -(sorted_tau_boot[simul_index_right,j])/sqrt(n)
-  simul_right_confidence_limit_matrix[1,j]= beta_hat_final3[j]+simul_critical_value_matrix_right[1,j]
+critical_value_matrix_right[1,j] = -(sorted_tau_boot[index_right,j])/sqrt(n)
+right_confidence_limit_matrix[1,j]= beta_hat_final3[j]+critical_value_matrix_right[1,j]
 }
-simul_critical_value_matrix_right
-simul_right_confidence_limit_matrix
+critical_value_matrix_right
+right_confidence_limit_matrix
 
-simul_critical_value_matrix_left = matrix(NA,1,9)
-simul_left_confidence_limit_matrix = matrix(NA,1,9)
+critical_value_matrix_left = matrix(NA,1,9)
+left_confidence_limit_matrix = matrix(NA,1,9)
 for(j in 1:9){
-  simul_critical_value_matrix_left[1,j] = -(sorted_tau_boot[simul_index_left,j])/sqrt(n)
-  simul_left_confidence_limit_matrix[1,j]= beta_hat_final3[j]+simul_critical_value_matrix_left[1,j]
+critical_value_matrix_left[1,j] = -(sorted_tau_boot[index_left,j])/sqrt(n)
+left_confidence_limit_matrix[1,j]= beta_hat_final3[j]+critical_value_matrix_left[1,j]
 }
-simul_critical_value_matrix_left
-simul_left_confidence_limit_matrix
+critical_value_matrix_left
+left_confidence_limit_matrix
+
 
 
