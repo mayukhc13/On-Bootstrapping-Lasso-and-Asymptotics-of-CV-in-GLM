@@ -1,0 +1,13 @@
+we will investigate the convergence behaviour of the distribution of $n^{-1/2}\hat{\lambda}_{n,K}$.
+
+We present the histogram of the distribution of $n^{-1/2}\hat{\lambda}_{n,K}$ under the following choices: 
+
+$n\in \{50,100,150,300,500,1000,1500,2500\}$
+and
+$(p,p_0)\in \{(5,2),(7,4),(8,3)\}.$
+
+The simulation results presented here are for logistic regression. 
+
+Similar results can be replicated for linear and gamma regressions. 
+
+The remaining set-ups are more or less similar to what we have done so far.
